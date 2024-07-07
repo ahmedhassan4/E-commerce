@@ -3,11 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="../dist/output.css">
-    <title>Document</title>
+    <!-- iconse -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Swipper css -->
+    <link rel="stylesheet" href="../Assets/styles/swiper-bundle.min.css">
+    <title>Shop</title>
 </head>
 <body>
-    
-    <div>Hello</div>
+        <!-- offer announcement -->
+        <div class="top-header bg-primary">
+        <div class="container mx-auto text-white flex justify-center md:justify-between py-2 items-center">
+            <!-- left side -->
+            <div class="header-offer text-[13px] uppercase font-[400] text-center">
+                <span class="">Up to 40% off Best-Selling Furniture. </span>
+                <a href="#" class="relative after:content-[''] after:absolute after:top-4 after:left-0 after:w-8 after:h-[1px] after:bg-white after:transform after:origin-left after:ease-in-out after:duration-300 hover:after:w-full hover:after:bg-link-primary hover:text-link-primary">
+                Shop Now
+                </a>
+            </div>
+            <!-- Right side -->
+            <div class="header-offer text-[13px] uppercase hidden md:flex">
+                <a href="#" class="flex items-center group" >
+                    <span class=" group-hover:text-link-primary transition-colors duration-200">English</span>
+                    <i class="ri-arrow-down-s-line text-[19px] ml-1 group-hover:text-link-primary transition-colors duration-200"></i>
+                </a>
+
+                <a href="#" class="ml-6 flex items-center group">
+                    <span class="group-hover:text-link-primary transition-colors duration-200">USD</span>
+                    <i class="ri-arrow-down-s-line text-[19px] ml-1 group-hover:text-link-primary transition-colors duration-200"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <!-- nav -->
+        <div class="nav mt-4 xl:mt-7 relative after:content-[''] after:absolute after:bg-link-border after:left-0 after:top-20 after:w-full after:h-[.5px] after:2xl:w-0">
+        <div class="container mx-auto">
+            <div class="nav-container flex justify-between items-center ">
+            <!-- nav : left section  -->
+                <div class="nav-left capitalize flex items-center order-2 flex-1 justify-end md:justify-between lg:order-1 lg:justify-start lg:flex-1 ">
+                    <div class="nav-icon flex pr-5 lg:pr-0 md:order-2 lg:order-1">
+                        <i class="ri-menu-line text-[19px]"></i>
+                    </div>
+                    <ul class="hidden md:flex md:order-1 md:ml-8 lg:order-2">
+                        <li class="group flex items-center relative">
+                            <a href="#" class="relative text-[16px] after:content-[''] after:absolute after:top-6 after:left-0 after:w-full after:h-[.5px] after:bg-link-primary after:scale-x-0  after:ease-in-out after:duration-300 group-hover:after:scale-x-100 group-hover:text-link-primary">
+                                shop       
+                            </a>
+                            <i class="ri-arrow-down-s-line text-[16px] ml-1 group-hover:text-link-primary transition-colors duration-200 absolute right-[-15px]"></i>
+                        </li>
+                        <li class="group flex items-center relative ml-7  xl:ml-12">
+                            <a href="#" class="relative text-[16px] after:content-[''] after:absolute after:top-6 after:left-0 after:w-full after:h-[.5px] after:bg-link-primary after:scale-x-0  after:ease-in-out after:duration-300 group-hover:after:scale-x-100 group-hover:text-link-primary">
+                                women       
+                            </a>
+                            <i class="ri-arrow-down-s-line text-[16px] ml-1 group-hover:text-link-primary transition-colors duration-200 absolute right-[-15px]"></i>
+                        </li>
+                        <li class="group flex items-center relative ml-7  xl:ml-12">
+                            <a href="#" class="relative text-[16px] after:content-[''] after:absolute after:top-6 after:left-0 after:w-full after:h-[.5px] after:bg-link-primary after:scale-x-0  after:ease-in-out after:duration-300 group-hover:after:scale-x-100 group-hover:text-link-primary">
+                                men       
+                            </a>
+                            <i class="ri-arrow-down-s-line text-[16px] ml-1 group-hover:text-link-primary transition-colors duration-200 absolute right-[-15px]"></i>
+                        </li>
+                        <li class="group flex items-center relative ml-7  xl:ml-12">
+                            <a href="#" class="relative text-[16px] after:content-[''] after:absolute after:top-6 after:left-0 after:w-full after:h-[.5px] after:bg-link-primary after:scale-x-0  after:ease-in-out after:duration-300 group-hover:after:scale-x-100 group-hover:text-link-primary">
+                                kids       
+                            </a>
+                            <i class="ri-arrow-down-s-line text-[16px] ml-1 group-hover:text-link-primary transition-colors duration-200 absolute right-[-15px]"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- nav: Logo section -->
+                <div class="logo min-w-[128px] max-w-[200px] order-1 lg:order-2 lg:flex-auto" >
+                    <a href="">
+                        <img src="../Assets/images/Logo/png/logo-no-background.png" alt="">
+                    </a>
+                </div>
+                <!-- nav: right section -->
+                <div class="nav-right flex order-3 lg:flex-1 lg:justify-end">
+                    <div class="search">
+                        <span class="icon">
+                            <i class="ri-search-2-line hover:text-link"></i>
+                        </span>
+                    </div>
+                    <div class="user hidden pl-3  md:block lg:pl-8 ">
+                        <span class="icon">
+                            <i class="ri-user-3-line hover:text-link"></i>
+                        </span>
+                    </div>
+                    <div class="favourite pl-3 lg:pl-8">
+                        <span class="icon">
+                            <i class="ri-heart-line hover:text-link"></i>
+                        </span>
+                    </div>
+                    <div class="cart pl-3 lg:pl-8">
+                        <span class="icon">
+                            <i class="ri-shopping-cart-2-line hover:text-link"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- title section -->
+        <div class="title mt-20">
+            <div class="container mx-auto text-center">
+                <div class="path capitalize text-lg font-[400] mb-4">
+                    <a href=""><span class="text-link">home /</span></a>
+                    <a href=""><span>shop</span></a>
+                </div>
+                <div class="title-header uppercase font-[700] text-3xl">
+                    <h1>shop</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Section -->
+
+
+
+         <div class="h-[3000px]"></div>
+    <!-- swipper -->
+    <script src="../scripts/swiper-bundle.min.js"></script>
+    <!-- shop.js -->
+     <script></script>
 </body>
 </html>
