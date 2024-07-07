@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build:tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch:tailwind":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "watch:tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "swiper": "^11.1.4"
   }
 }
